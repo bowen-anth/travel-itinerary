@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  min-height: 100vh;
+  min-height: 100lvh;
+}
+
+.card {
+  display: grid;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10vh;
+  width: 90%;
+  max-width: 500px;
+  background-color: rgb(246, 246, 246);
+  border-radius: 15px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(229, 228, 228);
+  font-size: 1.25rem;
+  padding: 0.5em 0;
+  margin-bottom: 1em;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.status-container.booked,
+.status-container.preparation,
+.status-container.check-in {
+  position: relative;
+}
+
+.line {
+  width: 3px;
+  background-color: rgb(229, 228, 228);
+  height: 72%;
+  position: absolute;
+  bottom: -2%;
+  margin-left: 2rem;
+  z-index: -1;
+}
+
+.line.preparation {
+  margin-bottom: -0.25em;
+}
+
+.line.check-in {
+  margin-bottom: -0.25em;
+  height: 60%;
+}
+
+.status-container {
+  display: flex;
+  padding: 1em;
+}
+
+.checkmark-container {
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(4, 240, 23);
+  color: white;
+  font-size: 1.25rem;
+  margin: 0 1em;
+  flex-shrink: 0;
+  box-shadow: 0 2px 4px rgb(4, 240, 23);
+}
+
+.checkmark-container.pending {
+  background-color: rgb(229, 228, 228);
+  box-shadow: 0 2px 4px rgb(229, 228, 228);
+}
+
+.status {
+  color: #26a7f7;
+  font-weight: bold;
+}
+
+.confirmation-text {
+  margin: 1em 0 0 0;
+  font-weight: bold;
+}
+
+.confirmation-number {
+  font-weight: bold;
+  margin-top: 0.25em;
+  letter-spacing: 4px;
+  font-size: 1.25rem;
+}
+
+.button {
+  height: 2.25rem;
+  padding: 0 1em;
+  margin: 1.5em 0;
+  border-radius: 10px;
+  border: none;
+  background-color: #26a7f7;
+  color: white;
+}
+
+.priority {
+  display: block;
+  margin-top: 1em;
+  background-color: rgb(229, 228, 228);
+  border: none;
+  border-radius: 15px;
+  padding: 0.5em 1em;
+}
+
+.check-in-p,
+.packing-p {
+  margin: 0.5em 0;
+}
+
+.priority.check-in {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.button.baggage {
+  margin: 1em 0;
+}
+
+.footer {
+  margin-top: 2em;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  margin-top: 5rem;
+}
